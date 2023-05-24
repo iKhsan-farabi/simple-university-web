@@ -54,7 +54,7 @@
             <!-- Quill Editor Full -->
         
               <div id="quill-editor">
-                <textarea name="content" class="form-control" cols="30" rows="10">{{ $news->content }}</textarea>
+                <textarea name="content" class="form-control" cols="30" rows="10">{!! $news->content !!}</textarea>
                 </div>
 
                 <input type="hidden" id="content" name="content">
