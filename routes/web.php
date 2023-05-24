@@ -50,6 +50,8 @@ Route::get('/admin', function(){
     return view('admin.index');
 })->name('admin.index');
 
+Route::get('admin' , [HomeController::class , 'admin'])->name('admin.index');
+
 // Halaman Pendidik / Dosen
 Route::resource('admin/pendidik', PendidikController::class);
 Route::get('admin/pimpinan', [PendidikController::class, 'pimpinan'])->name('pendidik.pimpinan');

@@ -5,7 +5,7 @@
 <section id="hero-animated" class="hero-animated d-flex align-items-center">
   <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
     <img src="assets/img/hero-carousel/hero-carousel-3.svg" class="img-fluid animated">
-    <h2>Welcome to <span>TKI UPM</span></h2>
+    <h2>Welcome to <span>TIK UPM</span></h2>
     <p>"Jurusan Teknik Informatika UPM membuka pintu menuju masa depan digital, menggabungkan kreativitas dan pemecahan masalah untuk menciptakan solusi inovatif dalam dunia teknologi."</p>
     <div class="d-flex">
       <a href="#about" class="btn-get-started scrollto">Daftar Sekarang</a>
@@ -707,7 +707,7 @@
 
         <div class="col-lg-3 col-md-6">
           <div class="footer-info">
-            <h3>TKI UPM</h3>
+            <h3>TIK UPM</h3>
             <p>
               A108 Adam Street <br>
               NY 535022, Indonesia<br><br>

@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\News;
+use App\Models\User;
 use App\Models\Matkul;
-use App\Models\Pendidik;
 use App\Models\Activity;
 use App\Models\Beasiswa;
+use App\Models\Pendidik;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
@@ -24,6 +26,16 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    public function admin(){
+        // Hitung data pendidik
+        $jmlhuser = User::count();
+        $jmlhberita = News::count();
+        $jmlhpendidik = Pendidik::count();
+        $pendidik = Pendidik::latest()->take(5)->get();
+        $berita = News::latest()->take(5)->get();
+        $aktivitasharian = Activity::latest()->take(5)->get();
+        return view('admin.index' , compact('jmlhuser', 'jmlhberita','jmlhpendidik', 'aktivitasharian','pendidik','berita'));
+    }
     public function index()
     {
         if(Auth::check()){

@@ -56,11 +56,6 @@
               <i class="bi bi-circle"></i><span>Daftar Berita</span>
             </a>
           </li>
-          <li>
-            <a href="tables-data.html">
-              <i class="bi bi-circle"></i><span>Log Aktivitas</span>
-            </a>
-          </li>
         </ul>
       </li><!-- End Tables Nav -->
 
