@@ -50,12 +50,12 @@
 
             <div class="tab-pane fade show active" id="tab1">
               <p class="fst-italic">Visi Jurusan Teknik Informatika</p>
-              @foreach ($profile as $visi )
+  
               <div class="d-flex align-items-center mt-4">
                 <i class="bi bi-check2"></i>
-                <p>{{ $visi->visi }}.</p>
+                <p>Menyelenggarakan program pendidikan berkualitas tinggi yang mengintegrasikan teori dan praktik dalam bidang Teknik Informatika.</p>
               </div>
-              @endforeach
+   
             </div><!-- End Tab 1 Content -->
 
             <div class="tab-pane fade show" id="tab2">
