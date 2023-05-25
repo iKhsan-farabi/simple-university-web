@@ -31,13 +31,13 @@
                 <div class="row mb-3">
                     <label for="inputNumber" class="col-sm-2 col-form-label" name="visi">Visi</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" name="visi" value="{{ $profile->visi }}">
+                      <textarea type="text" class="form-control" name="visi">{{ $profile->visi }}</textarea>
                     </div>
                   </div>
               <div class="row mb-3">
                 <label for="inputText" class="col-sm-2 col-form-label">Misi</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" name="misi" value="{{ $profile->misi }}">
+                  <textarea type="text" class="form-control" name="misi">{{ $profile->misi }}</textarea>
                 </div>
               </div>
               <div class="row mb-3">
