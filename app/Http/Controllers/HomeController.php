@@ -5,6 +5,7 @@ use App\Models\News;
 use App\Models\User;
 use App\Models\Matkul;
 use App\Models\Activity;
+use App\Models\Profile;
 use App\Models\Beasiswa;
 use App\Models\Pendidik;
 use Illuminate\Support\Facades\Auth;
@@ -50,7 +51,9 @@ class HomeController extends Controller
         }
         $pendidik = Pendidik::all();
         $matkul = Matkul::all();
-        return view('home', compact('matkul' , 'pendidik'));
+        $profile = Profile::all();
+
+        return view('home', compact('matkul' , 'pendidik','profile'));
     }
     public function dosen(){
 

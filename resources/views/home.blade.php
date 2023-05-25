@@ -4,7 +4,7 @@
 
 <section id="hero-animated" class="hero-animated d-flex align-items-center">
   <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
-    <img src="assets/img/hero-carousel/hero-carousel-3.svg" class="img-fluid animated">
+    <img src="assets/img/hero-carousel/hero-carousel-3.png" class="img-fluid animated">
     <h2>Welcome to <span>TIK UPM</span></h2>
     <p>"Jurusan Teknik Informatika UPM membuka pintu menuju masa depan digital, menggabungkan kreativitas dan pemecahan masalah untuk menciptakan solusi inovatif dalam dunia teknologi."</p>
     <div class="d-flex">
@@ -42,7 +42,6 @@
           <ul class="nav nav-pills mb-3">
             <li><a class="nav-link active px-3" data-bs-toggle="pill" href="#tab1">Visi</a></li>
             <li><a class="nav-link px-3" data-bs-toggle="pill" href="#tab2">Misi</a></li>
-            <li><a class="nav-link px-3" data-bs-toggle="pill" href="#tab3">Akreditasi</a></li>
           </ul><!-- End Tabs -->
 
           <!-- Tab Content -->
@@ -50,47 +49,23 @@
 
             <div class="tab-pane fade show active" id="tab1">
               <p class="fst-italic">Visi Jurusan Teknik Informatika</p>
-  
+              @foreach ($profile as $item )
               <div class="d-flex align-items-center mt-4">
                 <i class="bi bi-check2"></i>
-                <p>Menyelenggarakan program pendidikan berkualitas tinggi yang mengintegrasikan teori dan praktik dalam bidang Teknik Informatika.</p>
+                <p>{{ $item->visi }}.</p>
               </div>
-   
+              @endforeach
             </div><!-- End Tab 1 Content -->
 
             <div class="tab-pane fade show" id="tab2">
               <p class="fst-italic">Misi Jurusan Teknik Informatika</p>
+              @foreach ($profile as $item )
               <div class="d-flex align-items-center mt-4">
                 <i class="bi bi-check2"></i>
-                <p>Menyelenggarakan program pendidikan berkualitas tinggi yang mengintegrasikan teori dan praktik dalam bidang Teknik Informatika.</p>
+                <p>{{ $item->misi }}.</p>
               </div>
-              <div class="d-flex align-items-center mt-4">
-                <i class="bi bi-check2"></i>
-                <p>Melakukan penelitian yang berorientasi pada inovasi, penemuan, dan pengembangan teknologi informasi yang berkontribusi pada kemajuan masyarakat dan industri.</p>
-              </div>
-              <div class="d-flex align-items-center mt-4">
-                <i class="bi bi-check2"></i>
-                <p>Membangun kemitraan strategis dengan industri dan lembaga terkait untuk meningkatkan kesempatan kerja dan penerapan teknologi informasi yang relevan.</p>
-              </div>
+              @endforeach
             </div><!-- End Tab 2 Content -->
-
-            <div class="tab-pane fade show" id="tab3">
-              <p class="fst-italic">Akreditasi Jurusan Teknik Informatika</p>
-              <div class="d-flex align-items-center mt-4">
-                <i class="bi bi-check2"></i>
-                <p>Jurusan Teknik Informatika memiliki akreditasi yang diakui dan mengikuti standar keunggulan dalam pendidikan dan penelitian.</p>
-              </div>
-
-              <div class="d-flex align-items-center mt-4">
-                <i class="bi bi-check2"></i>
-                <p>Jurusan Teknik Informatika telah memperoleh akreditasi "A" dari Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT).</p>
-              </div>
-
-              <div class="d-flex align-items-center mt-4">
-                <i class="bi bi-check2"></i>
-                <p>Jurusan Teknik Informatika telah terakreditasi oleh lembaga akreditasi internasional seperti ABET (Accreditation Board for Engineering and Technology).</p>
-              </div>
-            </div><!-- End Tab 3 Content -->
 
           </div>
 
@@ -398,7 +373,7 @@
         <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
           <div class="service-item">
             <div class="img">
-              <img src="https://source.unsplash.com/random/900x700/?coding" class="img-fluid" alt="">
+              <img src="https://source.unsplash.com/random/900x700/?library" class="img-fluid" alt="">
             </div>
             <div class="details position-relative">
               <div class="icon">
@@ -593,7 +568,7 @@
         <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
           <div class="team-member">
             <div class="member-img">
-              <img src="https://source.unsplash.com/random/900x700/?ceo" class="img-fluid" alt="">
+              <img src="https://source.unsplash.com/random/900x700/?library" class="img-fluid" alt="">
             </div>
             <div class="member-info">
               <div class="social">
@@ -625,7 +600,7 @@
     </div>
 
     <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15862.69081446668!2d106.756196!3d-6.306661!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69efda2b18eeb1%3A0xe3bea9346241f122!2sUniversitas%20Islam%20Negeri%20Syarif%20Hidayatullah%20Jakarta!5e0!3m2!1sid!2sid!4v1685019235437!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div><!-- End Google Maps -->
 
     <div class="container">

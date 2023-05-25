@@ -61,8 +61,15 @@ Route::resource('admin/matkul', MatkulController::class);
 Route::resource('admin/beasiswa', BeasiswaController::class);
 // Halaman Kegiatan
 Route::resource('admin/news', NewsController::class);
+
 // Halamman Visimisi
-Route::resource('admin/profile' , ProfileController::class);
+Route::get('admin/profile' , [ProfileController::class , 'index'])->name('profile.index');
+Route::get('admin/profile/create' , [ProfileController::class , 'create'])->name('profile.create');
+Route::post('admin/profile/store' , [ProfileController::class , 'store'])->name('profile.store');
+Route::get('admin/profile/edit/{id}' , [ProfileController::class , 'edit'])->name('profile.edit');
+Route::put('admin/profile/update/{id}' , [ProfileController::class , 'update'])->name('profile.update');
+Route::delete('admin/profile/destroy/{id}' , [ProfileController::class , 'destroy'])->name('profile.destroy');
+
 
 
 
